@@ -1,0 +1,19 @@
+
+
+.PartidosVista{
+    height: 100vh;
+    .seccion-PartidosVista{
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        height: 100vh;
+        .contenedor-Equipos-PartidosVista{
+            display: flex;
+            gap: 30px;
+        }
+        
+    }
+}

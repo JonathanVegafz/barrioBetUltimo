@@ -1,0 +1,156 @@
+.navegador{
+    background-color: grey;
+    height: 100px;
+    box-shadow: 0px 5px 5px rgba(48, 48, 48, 0.685);
+    border-radius: 0 0 30px 30px;
+    width: 100%;
+    nav{
+        height: 100%;
+        div{
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 0 20px;
+            justify-content: space-between;
+            .botonNav{
+                display: flex;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                .icono{
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+            .logo{
+                width: 60px;
+                height: 60px;
+            }
+
+            
+        }
+    }
+}
+
+.menu{
+    @media screen and (max-width: 451px){
+        min-width: 100vw;
+        width: calc(100vw - 100px);
+    }
+    .header-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100px;
+       
+        background-color: grey;
+        .contenedor-img{
+            display: flex;
+            justify-content: center;
+            width: 344px;
+
+
+            
+            @media screen and (max-width: 451px){
+                width: calc(100vw - 100px);
+            }
+            .icono{
+                height: 70px;
+                width: 70px;
+            }
+        }
+    }
+    .body-menu{
+        padding: 0;
+        .menu-list{
+            list-style: none;
+            padding: 0;
+            // margin: ;
+            li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 80px;
+                // border-bottom: 1px solid #FC7108;
+                &.activo{
+                    background-color: grey;
+                    border-top: 1px solid #fff;
+                    .elementoLink{
+                        color: #fff;
+                    }
+                }
+                &.desactivado{
+                    background-color: #fff;
+                    border-bottom: 1px solid grey;
+                    .elementoLink{
+                        color: grey;
+                    }
+
+                    &:hover{
+                        background-color: grey;
+                        border-top: 1px solid #fff;
+                        .elementoLink{
+                            color: #fff;
+                        }
+                        cursor: pointer;
+                    }
+                }
+                // border:  1px solid #FC7108;
+                .elementoLink{
+                    text-decoration: none;
+                    // color: #FC7108;
+                }
+            }   
+
+        }
+
+        .contenedorCardUsuario{
+            display: flex;
+            justify-content: start;
+
+            &.inicioSecion{
+                justify-content: center;
+                padding-left: 0px;
+            }
+            gap: 30px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-left: 25px;
+
+            align-items: center;
+            height: auto;
+
+            margin: 0 20px;
+            border-radius: 30px;
+            background-color: grey;
+            // flex-direction: column;
+            .icono{
+                height: 60px;
+                width: 60px;
+                color: #ffffff;
+            }
+            .contenedorCardUsuarioDetalles{
+                color: #ffffff;
+                h5{
+                    font-family: Lato;
+                    font-size: 18px;
+                    font-weight: 400;
+                    margin-block-start: 0em;
+                    margin-block-end: 0em;
+                    margin-inline-start: 0px;
+                    margin-inline-end: 0px;
+                }
+                h4{
+                    font-family: Lato;
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-block-start: 0em;
+                    margin-block-end: 0.5em;
+                    margin-inline-start: 0px;
+                    margin-inline-end: 0px;
+                }
+            }
+            // height: 100px;
+        }
+    }
+}

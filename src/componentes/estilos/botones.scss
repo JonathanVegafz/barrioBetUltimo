@@ -1,0 +1,86 @@
+.boton01{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FC7108;
+    // border: 1px solid #000;
+    // width: 100%;
+    // width: auto;
+    padding: 2px 20px;
+    border-radius: 10px;
+    border: 0.2px solid #FC7108;
+    &:hover{
+        background-color: #FC7108;
+        color: #fff;
+        border: 0.2px solid #fff;
+        cursor: pointer;
+    }
+
+    &:active{
+        background-color: #fff;
+        color: #FC7108;
+        cursor: none;
+        border: 0.2px solid #FC7108;
+    }
+    &.alternativo{
+        background-color: #FC7108;
+        color: #fff;
+        box-shadow: 0px 0px 4px 0px #00000097;
+        &:hover{
+            background-color: #fff;
+            border: 0.2px solid #FC7108;
+            color: #FC7108;
+            cursor: pointer;
+        }
+    }
+    // cursor: pointer;
+    // transition: all 0.3s ease;
+    // &:hover{
+    //     background-color: #fff;
+    //     color: #000;
+    // }
+}
+
+.boton02{
+    background-color: #FC7108;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 100%;
+    svg{
+        width: 35px;
+        height: 35px;
+    }
+    &:hover{
+        background-color: #FC7108;
+        color: #fff;
+        border: 0.2px solid #fff;
+        cursor: pointer;
+    }
+}
+
+.boton03{
+    // background-color: #FC7108;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // color: #fff;
+    // border-radius: 100%;
+    svg{
+        width: 25px;
+        height: 25px;
+        color: #FC7108; 
+    }
+    &:hover{
+        background-color: #FC7108;
+        border-radius: 100%;
+        svg{
+            
+            color: #fff; 
+        }
+        // border: 0.2px solid #fff;
+        cursor: pointer;
+    }
+}

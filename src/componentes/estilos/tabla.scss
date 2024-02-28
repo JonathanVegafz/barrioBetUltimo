@@ -1,0 +1,55 @@
+.tabla{
+    margin: 10px;
+    // padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px rgba(48, 48, 48, 0.685);
+
+    .tabla-header{
+        background-color: #7bb0ff;
+        border-radius: 10px 10px 0 0;
+        height: 70px;
+        display: flex;
+        align-items: center;
+
+        padding: 20px;
+        h3{
+            color: white;
+        }
+
+        .tabla-header-acciones{
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            gap: 10px;
+        }
+    }
+
+    .tabla-body{
+        overflow: auto; 
+    }
+
+    .tabla-contenedor{
+        overflow: auto;
+    }
+    
+    .botonesAcciones{
+        display: flex;
+        gap: 10px;
+        .botonBasurero{
+            color: grey;
+            &:hover{
+                color: red;
+                cursor: pointer;
+            }
+        }
+
+        .botonEditar{
+            color:grey;
+            &:hover{
+                color: #0d6efd;
+                cursor: pointer;
+            }
+        }
+    }
+}
